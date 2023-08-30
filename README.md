@@ -1,17 +1,11 @@
-# First Compass Challenge
+# Challenges
 
-#### From: *14/06/2023* to *21/06/2023*
 
-### Instructions
-
-- The challenge consists in five code challenges about Java, SQL and NoSQL
-- Each code challenge must have its own production branch which will be merged to dev branch and then to main branch
-
-| Question   | Jump to it                                                              |
-|------------|-------------------------------------------------------------------------|
-| Question 1 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-1) |
-| Question 2 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-2) |
-| Question 3 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-3) |
+| Question   | Jump to it                                                              | Source |
+|------------|-------------------------------------------------------------------------|--------|
+| Question 1 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-1) | Compass|
+| Question 2 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-2) | Compass|
+| Question 3 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-3) | Compass|
 
 ___
 # Code challenge 1
