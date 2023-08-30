@@ -12,9 +12,6 @@
 | Question 1 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-1) |
 | Question 2 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-2) |
 | Question 3 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-3) |
-| Question 4 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-4) |
-| Question 5 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-5) |
-
 
 ___
 # Code challenge 1
@@ -236,80 +233,7 @@ ___
   k++;
   ~~~
   
-___
-# Code challenge 4
-___
-> - Main language: SQL
 
-- Tasks
-  - [x] folder creation
-  - [x] branch creation
-  - [x] start code production
-  - [x] question done
-
-#### About the challenge
-
-> Must write a scritp for PostgreSQL creating in this order:
-> 1. **Create a database**;
-> 2. **Create a table to store addresses with**
->    1. address_id
->    2. zip code
->    3. street name
->    4. complement for the address
->    5. neighborhood
->    6. city name
->    7. state name
->    8. country name;
-> 3. **Create a table to store persons with**
->    1. person_id
->    2. name
->    3. age
->    4. phone
->    5. height
->    6. email
->    7. cpf
->    8. date of birth
->    9. address_id
-
-> Note: 
-The **address_id** in _Person Table_ should be a **foreign key** which refers to the **address_id** in the _Address Table_ 
-
-
-#### How to solve it
-
-- Using the SQL language create the first database;
-- Then create the Address Table to first store the address to be referenced by the Person Table
-- Finally, create the Person Table.
-
-___ 
-# Code challenge 5
-___
-
-> - Main language: NoSQL
-
-- Tasks
-    - [x] folder creation
-    - [x] branch creation
-    - [x] start code production
-    - [x] question done
-
-#### About the challenge
-
-> Must create a script for MondoDB inserting a Person Document containing:
-> - Object;
-> - Name;
-> - Age;
-> - Phone;
-> - Height;
-> - Email;
-> - CPF;
-> - Date of birth;
-> - Address
-    >   - Zip code;
->   - Street name;
->   - Complement;
->   - Neighborhood;
->   - City;
 >   - State;
 >   - Country
 #### How to solve it
