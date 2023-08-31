@@ -207,8 +207,3 @@ ___
   k++;
   ~~~
   
-
-- Download Mongosh, you can find more about it [here](https://www.mongodb.com/docs/mongodb-shell/);
-- Start the executable file in .zip folder;
-- Connect to your MongoDB server;
-- And then follow the written code.
