@@ -8,19 +8,13 @@
 | Question 3 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-3) | Compass|
 
 ___
-# Code challenge 1
+# Question 1
 ___ 
 > - Main language: JAVA
-
-- Tasks
-  - [x] folder creation
-  - [x] branch creation
-  - [x] start code production
-  - [x] question done
   
 #### About the challenge
 
-> Must output the student name that failed in the class respecting the quantity of problems solved and the name ordered alphabetically
+> Must output the student name that failed in the class respecting the number of problems solved and the name ordered alphabetically
 
 > **First tiebraker** => number of problems solved
 >
@@ -28,7 +22,7 @@ ___
 
 #### How to solve it
 
-- Create one **Array List** to store the students name and another one to store how many problems were solved;
+- Create one **Array List** to store the students' name and another one to store how many problems were solved;
   - With an Array List will be easier <u> remove data</u>, <u> add data</u> and <u>comparing it</u>. The methods most used in the code.
   ~~~java
   ArrayList<Integer> problemSolved = new ArrayList<Integer>();
@@ -101,15 +95,9 @@ ___
         
 ---
 
-# Code challenge 2
+# Question 2
 ___
 > - Main language: JAVA
-
-- Tasks
-  - [x] folder creation
-  - [x] branch creation
-  - [x] start code production
-  - [x] question done
   
 #### About the challenge
 
@@ -151,16 +139,8 @@ ___
   }
   ~~~
 ___
-# Code challenge 3
-___
-> - Main language: JAVA
+# Question 3
 
-- Tasks
-  - [x] folder creation
-  - [x] branch creation
-  - [x] start code production
-  - [x] question done
-  
 #### About the challenge
 
 > Must output the result of an equation 
@@ -227,10 +207,6 @@ ___
   k++;
   ~~~
   
-
->   - State;
->   - Country
-#### How to solve it
 
 - Download Mongosh, you can find more about it [here](https://www.mongodb.com/docs/mongodb-shell/);
 - Start the executable file in .zip folder;
