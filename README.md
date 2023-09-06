@@ -8,19 +8,21 @@
 | Question 3 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-3) | Compass|
 
 ___
-# Question 1
-___ 
-> - Main language: JAVA
-  
-#### About the challenge
+# Compass
 
+<details> <summary> Question 1 </summary>
+  
+<details> <summary> About the challenge </summary>
+
+> Main language: JAVA
 > Must output the student name that failed in the class respecting the number of problems solved and the name ordered alphabetically
 
 > **First tiebraker** => number of problems solved
 >
 > **Second tiebraker** => last name alphabetically sorted
 
-#### How to solve it
+</details>   
+<details> <summary> How to solve it </summary>
 
 - Create one **Array List** to store the students' name and another one to store how many problems were solved;
   - With an Array List will be easier <u> remove data</u>, <u> add data</u> and <u>comparing it</u>. The methods most used in the code.
@@ -92,22 +94,23 @@ ___
         ~~~java
         System.out.println(studentsName.get(0));
         ~~~
-        
----
-
-# Question 2
-___
-> - Main language: JAVA
   
-#### About the challenge
+</details> 
+        
+</details>
+<details><summary> Question 2 </summary>
 
+<details> <summary> About the challenge </summary>
+
+> Main language: JAVA
 > Must output one of the next messages
 > - **"Fun"** => if the amount happy faces is greater than the amount of sad faces
 > - **"Neutral"** => if the amount of happy faces is equal than the amount of sad faces
 > - **"Sad"** => if the amount of happy faces is lower than the amount of happy faces
+</details> 
 
-#### How to solve it
-
+<details> <summary>How to solve it </summary>
+  
 - Create an **array** (_elements_) to store each element from the **string** (_line_) separated by whitespaces using the method **.split( )**;
 - Instatiate a Scanner Class to read the input;
 - With a **string** (_line_) store each .nextLine( )
@@ -138,72 +141,88 @@ ___
       System.out.println("Fun");
   }
   ~~~
-___
-# Question 3
+</details>
+  
+ 
+</details>
 
-#### About the challenge
+<details><summary> Question 3 </summary>
 
-> Must output the result of an equation 
+ 
+<details> <summary> About the challenge </summary>
 
-#### How to solve it
+> Must output the result of an equation
+> Main language: JAVA
+</details> 
+
+<details> <summary> How to solve it </summary>
 
 - Instantiate a **Scanner** Class to read the input;
 - Create an **array**(_results_) to store each equation's result and then print it out 
-  ~~~ java
-  Scanner source = new Scanner(System.in);
-  int result = 0;
-  List<Integer> results = new ArrayList<>();
-  int k = 1;;
-  ~~~ 
+~~~ java
+Scanner source = new Scanner(System.in);
+int result = 0;
+List<Integer> results = new ArrayList<>();
+int k = 1;;
+~~~ 
 - A **while** loop to run through every line
-  ~~~ java
-  while (source.hasNext())
-  ~~~ 
+~~~ java
+while (source.hasNext())
+~~~ 
 - Some **if statement** to check how many number are on the input and if it respects the constraints
-  ~~~java
-  if (operandsQuantity < 1 || operandsQuantity > 100) {
-  break;
-  }
-  if (operandsQuantity != 0) {
-  String equation = source.next();
-  ~~~~
+~~~java
+if (operandsQuantity < 1 || operandsQuantity > 100) {
+break;
+}
+if (operandsQuantity != 0) {
+String equation = source.next();
+~~~~
 - This particular for loop was made to store the signs presented in the equationOperator.
-  ~~~java
-  for (int i = 0; i < equationFormatted.length(); i++) {
-        equationOperator.add(equationFormatted.charAt(i));
-        }
-  ~~~
+~~~java
+for (int i = 0; i < equationFormatted.length(); i++) {
+      equationOperator.add(equationFormatted.charAt(i));
+      }
+~~~
 - Another if statement to check other constraints related to the numbers of operands and how many of them were inserted
-  ~~~java
-  if (operandsQuantity < equationCounter.size()) {
-  System.out.println("Exceeded number of operands, you must have inserted " + operandsQuantity + " operands");
+~~~java
+if (operandsQuantity < equationCounter.size()) {
+System.out.println("Exceeded number of operands, you must have inserted " + operandsQuantity + " operands");
 
-  } else if (operandsQuantity > equationCounter.size()) {
-  System.out.println("You must have inserted " + operandsQuantity + " operands");
-  ~~~
+} else if (operandsQuantity > equationCounter.size()) {
+System.out.println("You must have inserted " + operandsQuantity + " operands");
+~~~
 - The last part of the code was developed to add or to subtract the value of the result
 - Then this value is stored in the array(results)
 ~~~java
-  } else{
-  for(int j=0;j<equationCounter.size();j++){
-  if(equationOperator.get(j).hashCode()=="-".hashCode()){
+} else{
+for(int j=0;j<equationCounter.size();j++){
+if(equationOperator.get(j).hashCode()=="-".hashCode()){
 
-  result=result-Integer.parseInt((String)equationCounter.get(j));
+result=result-Integer.parseInt((String)equationCounter.get(j));
 
-  }else{
-  result=Integer.parseInt((String)equationCounter.get(j))+result;
-  }
+}else{
+result=Integer.parseInt((String)equationCounter.get(j))+result;
+}
 
-  }
-  results.add(result);
-  }
-  ~~~
+}
+results.add(result);
+}
+~~~
 
 - A **for each loop** to print each result stored in the **array**(_results_)
-  ~~~java
-  for (int i : results) {
-  System.out.println("Test: " + k);
-  System.out.println(i);
-  k++;
-  ~~~
-  
+~~~java
+for (int i : results) {
+System.out.println("Test: " + k);
+System.out.println(i);
+k++;
+~~~
+</details> 
+
+    
+</details>
+    
+    
+    
+    
+    
+      
