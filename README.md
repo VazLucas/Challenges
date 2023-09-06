@@ -3,9 +3,8 @@
 
 | Question   | Jump to it                                                              | Source |
 |------------|-------------------------------------------------------------------------|--------|
-| Question 1 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-1) | Compass|
-| Question 2 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-2) | Compass|
-| Question 3 | [Link](https://github.com/VazLucas/Challenge1_Compass#code-challenge-3) | Compass|
+|Question 1-3| [Link](https://github.com/VazLucas/leetcode-challenges#compass)      | Compass|
+
 
 ___
 # Compass
