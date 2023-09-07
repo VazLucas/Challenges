@@ -12,8 +12,6 @@ ___
 
 <details> <summary> Question 1 </summary>
   
-<details> <summary> About the challenge </summary>
-
 > Main language: JAVA
 > Must output the student name that failed in the class respecting the number of problems solved and the name ordered alphabetically
 
@@ -21,7 +19,6 @@ ___
 >
 > **Second tiebraker** => last name alphabetically sorted
 
-</details>   
 <details> <summary> How to solve it </summary>
 
 - Create one **Array List** to store the students' name and another one to store how many problems were solved;
@@ -100,14 +97,12 @@ ___
 </details>
 <details><summary> Question 2 </summary>
 
-<details> <summary> About the challenge </summary>
 
 > Main language: JAVA
 > Must output one of the next messages
 > - **"Fun"** => if the amount happy faces is greater than the amount of sad faces
 > - **"Neutral"** => if the amount of happy faces is equal than the amount of sad faces
 > - **"Sad"** => if the amount of happy faces is lower than the amount of happy faces
-</details> 
 
 <details> <summary>How to solve it </summary>
   
@@ -149,11 +144,9 @@ ___
 <details><summary> Question 3 </summary>
 
  
-<details> <summary> About the challenge </summary>
 
 > Must output the result of an equation
 > Main language: JAVA
-</details> 
 
 <details> <summary> How to solve it </summary>
 
