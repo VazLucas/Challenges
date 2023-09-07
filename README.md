@@ -3,7 +3,8 @@
 
 | Question   | Jump to it                                                              | Source |
 |------------|-------------------------------------------------------------------------|--------|
-|Question 1-3| [Link](https://github.com/VazLucas/leetcode-challenges#compass)      | Compass|
+|Question 1-3| [Link](https://github.com/VazLucas/leetcode-challenges#compass)         | Compass|
+|Question 1-4| [Link](https://github.com/VazLucas/leetcode-challenges#uninter)         | Uninter|
 
 
 ___
@@ -220,8 +221,266 @@ k++;
     
 </details>
     
-    
-    
-    
-    
-      
+# Uninter
+
+<details> <summary> Question 1 </summary>
+
+> Main language: python
+> 
+> Receive a string and age, the program must output which institution the person should be studying at
+
+<details> <summary> How to solve it </summary>
+
+1. Variables to receive inputs
+```python
+name = str(input('Please, type a name:'))
+age = int(input('Please, type students age: '))
+institution = ''
+```
+2. If conditional to modify institution variable
+```python
+if age >= 1 and age <= 5:
+    institution = 'kindergarten'
+elif age >= 6 and age <= 10:
+    institution = 'elementary school'
+elif age > 10 and age < 15:
+    institution = 'middle school'
+elif age > 15 and age < 18:
+    institution = 'high school
+elif age > 18:
+    institution = 'college'
+```
+3. A print method
+```python
+   print('The student {} is {} years and is in {}' .format(name, age, institution))
+```
+5. A simple ``if`` conditional to restart the admissions functions or to stop it
+```python
+end = int(
+    input('Type 0 to continue and another value to stop'))
+if end != 0:
+    print('End of program')
+elif end == 0:
+    admissions()
+```
+</details>
+
+</details>  
+
+<details> <summary> Question 2 </summary>
+  
+> Main language: python
+> 
+> Receive a string and convert each vowel into a symbol and make every consonant upper case
+
+<details> <summary> How to solve it</summary>
+  
+1. A for loop is all we need to solve it, but first, we must receive an input as a string:
+  
+```python
+name = str(input('Type a name:'))
+```
+
+2. Then each element in that string will be compared within an ``if`` statement:
+
+```python
+for i in name:
+  if (i == 'a' or i == 'A'):
+      convertedName += '@'
+  elif (i == 'e' or i == 'E'):
+      convertedName += '&'
+  elif (i == 'o' or i == 'O'):
+      convertedName += '#'
+  elif (i == 'i' or i == 'I'):
+      convertedName += '!'
+  elif (i == 'u' or i == 'U'):
+      convertedName += '*'
+  else:
+      convertedName += i
+```
+
+3. As you can see, if the letter is not a vowel it will be added to the variable ``y``. Then just print it:
+
+```python
+print(convertedName.upper())
+```
+
+</details>
+</details>
+ 
+<details> <summary> Question 3 </summary>
+  
+> Main language: python
+> 
+> Create an Animal's Hotels game
+
+
+<details> <summary> How to solve it</summary>
+
+1. Instructions and the first stage
+```python
+print("Welcome to Animal's Hotels game")
+print('Your mission to allocate the guests:')
+print('Dog can not be next to a cat')
+print('Dog can not be next to a bone!)
+print('Cat can not be next to a rat.')
+print('Rat can not be next to a cheese.')
+print('Unavaible room already have a guest')
+print('G – cat')
+print('C – dog')
+print('R – rat')
+print('O – bone')
+print('Q – cheese')
+print('* - unavailable room')
+print('- - available room')
+print('           ----------------(First stage)--------------       ')
+print('           ----------------Good luck--------------       ')
+print('first, allocate the cat and the rat')
+
+print('[ * | * | - | G ]')
+print('[ R | - | * | * ]')
+
+rat = int(input('in what room you want to put the rat? '))
+cat = int(input('in what room you want to put  cat? '))
+```
+
+2. If the player matched his input with the correct answer, the next stage shows up
+```python
+if (rat == 6 and cat == 3):
+
+  print('congrats, you made it!')
+
+  print('            ----------------(stage 2)--------------       ')
+
+  print('In this stage you must alocate a dog, a bone and another dog')
+
+  print('[ - | * | * | * ]')
+  print('[ * | C | - | - ]')
+
+  dog1 = int(input('in what room you want to put the first dog? '))
+  bone = int(input('in what room you want to put the bone? '))
+  dog2 = int(input('in what room you want to put the second dog? '))
+```
+3. Then the third stage comes in the same strategy
+```python
+if ((bone == 1 and dog1 == 7 and dog2 == 8) or (bone == 1 and dog1 == 8 and dog2 == 7)):
+  print('congrats, you made it!')
+  print('            ----------------(stage 3)--------------       ')
+  print('Now your missions is to put a cat, a bone and a rat. ')
+
+  print('[ - | * | * | * ]')
+  print('[ - | G | - | * ]')
+
+  cat = int(input('where do you want to put  cat? '))
+  bone = int(input('where do you want to put bone? '))
+  rat = int(input('and the rat? '))
+```
+4. The next stages are always confirming the previous round's answers. The last and final stage!
+```python
+if (rat == 1 and bone == 5 and cat == 7):
+  print('                    congrats, you made it!            ')
+  print('            ----------------(stage 4)--------------       ')
+
+  print('Now your mission is to alocate two cheeses and a bone')
+  print('[ - | - | - | * ]')
+  print('[ * | R | * | * ]')
+
+  cheese = int(input('where do you want to put the  first cheese? '))
+  bone = int(input('where do you want to put the bone? '))
+  cheese2 = int(input('And the last cheese? '))
+
+  if ((bone == 2 and cheese == 3 and cheese2 == 1) or (bone == 2 and cheese == 1 and cheese2 == 3)):
+      print('------congrats, you won!------')
+```
+
+5. The previous rounds end with these ``else's``
+```python
+            else:
+                print('GAME OVER!!')
+        else:
+            print('GAME OVER!!')
+    else:
+        print('GAME OVER!!')
+else:
+    print('GAME OVER!!')
+````
+</details>  
+  
+</details>
+<details> <summary> Question 4 </summary>
+
+> Main language: python
+> 
+> Receive a subscription and show it
+
+<details> <summary> How to solve it</summary>
+
+1. Function to define a voucher number and receive some person's parameters
+```python
+def subscription():
+    number = randint(100, 400)
+    person['Voucher'] = number
+    voucherlist.append(number)
+    if len(set(voucherlist)) == len(voucherlist):
+        print('This is your voucher: {}' .format(number))
+        person['Name'] = input('What is your name?')
+        person['Phone'] = input('What is your phone?')
+        person['Email'] = input('What is your email?')
+        person['Course'] = input('What course?')
+        detail()
+
+        subscribed.append(person.copy())
+        del mysub[:]
+        mysub.append(person)
+    else:
+        detail()
+        print("Voucher invalid, restart")
+        detail()
+        start()
+```
+2. Function to start the application as a menu
+
+```python
+def start():
+
+    print('choose 1 to make a new subscription')
+    print('choose 2 to show the subscription list')
+    print('choose 3 to show your subscription')
+    print('choose 0 to end the program')
+    choose = input('Type your choice')
+    detail()
+    if choose == '1':
+        subscription()
+        start()
+
+    elif choose == '2':
+        if not subscribed:
+
+            print('No subscriptions')
+            detail()
+            start()
+        else:
+            print(*subscribed, sep='\n')
+            detail()
+            start()
+    elif choose == '0':
+        print('Program closed')
+
+    elif choose == '3':
+        if not mysub:
+            print('Subscription not made')
+            detail()
+            start()
+        else:
+            print(mysub)
+        detail()
+        start()
+    else:
+        print('Invalid option. Please, select 1, 2 or 0')
+        detail()
+        start()
+```
+
+</details>  
+  
+</details>
