@@ -146,6 +146,7 @@ ___
  
 
 > Must output the result of an equation
+>
 > Main language: JAVA
 
 <details> <summary> How to solve it </summary>
