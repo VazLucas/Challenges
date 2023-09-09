@@ -5,6 +5,7 @@
 |------------|-------------------------------------------------------------------------|--------|
 |Question 1-3| [Link](https://github.com/VazLucas/leetcode-challenges#compass)         | Compass|
 |Question 1-4| [Link](https://github.com/VazLucas/leetcode-challenges#uninter)         | Uninter|
+|Question 1-2| [Link](https://github.com/VazLucas/leetcode-challenges#new-rizon-bootcamp) | New Rizon Bootcamp Application |
 
 
 ___
@@ -476,5 +477,72 @@ def start():
 ```
 
 </details>  
-  
+</details>
+
+# New Rizon Bootcamp
+
+<details> <summary> Question 1 </summary>
+
+> Main language: python
+>
+> Find the nth triangular number and print a geometric view of it
+
+<details><summary> How to solve it</summary>
+
+1. The Gauss method to find out the triangular number
+
+   $(nth + (nth^2))/2$
+
+2. A `while` loop to print each line of the equilateral triangle, starting always with the `nth` term decreasing one at each line until we get to `nth=1`
+
+   ```python
+        while nth > 0:
+            print("°" * nth, sep=' ')
+            nth -= 1
+   ```
+
+</details>
+</details>
+
+<details> <summary> Question 2 </summary>
+
+> Main language: python
+>
+> Print a matrix of 0s and 1s with a determined number of columns and lines
+
+<details><summary> How to solve it</summary>
+
+1. We will use some `for` statements as well as `if` statements to tell the code which line and character to print.
+
+   1. The first is this and it controls how many will be printed respecting the previous lines input
+
+   ```python
+       for i in range(0, lines):
+   ```
+
+2. With the modulus operator in line 7, we check if the i's remaining number after divided by 2 is equal to 0, if it is so we will check if the j's remaining number after dividied by 2 is equal to 0.
+
+```python
+    if i % 2 == 0:
+        for j in range(0, columns):
+            if j % 2 == 0:
+                print('1', sep='', end='')
+            else:
+                print('0', sep='', end='')
+        print()
+```
+
+3. Then, if the first `if` statement is not satisfied, we get into the `else`
+
+```python
+        else:
+            for j in range(0, columns):
+                if j % 2 != 0:
+                    print('1', sep='', end='')
+                else:
+                    print('0', sep='', end='')
+            print()
+```
+
+</details>
 </details>
