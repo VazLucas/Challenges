@@ -12,12 +12,12 @@ def func():
                     print('0', sep='', end='')
             print()
         else:
-             for j in range(0, columns):
+            for j in range(0, columns):
                 if j % 2 != 0:
                     print('1',sep='', end='')
                 else:
                     print('0', sep='', end='')
-                    print()
+            print()
 
 
 func()
